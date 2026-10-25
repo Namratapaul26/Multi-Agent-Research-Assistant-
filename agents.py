@@ -18,7 +18,7 @@ llm = ChatMistralAI(
 
 def build_search_agent():
     return create_agent(
-        model = llm
+        model = llm,
         tools = [web_search]
     )
 

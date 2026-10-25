@@ -39,7 +39,7 @@ def run_research_pipeline(topic: str) -> dict:
     })
     
 
-     state['scraped_content'] = reader_result['messages'][-1].content
+    state['scraped_content'] = reader_result['messages'][-1].content
 
     print("\nscraped content: \n", state['scraped_content'])
 
